@@ -1,5 +1,6 @@
-import random.Random
-import kotlin.math.*
+import kotlin.math.pow
+import kotlin.math.sqrt
+
 fun main() {
     // Você está programando um jogo e precisa, em todo frame, calcular a distância entre o
     //personagem do(a) jogador(a) com um inimigo. Dados os pontos cartesianos P1 = (x1, y1)
@@ -28,7 +29,7 @@ fun jogo(): Double {
 
     val matriz = 10
 
-    for (i in 1..matriz){
+    for (i in 0 until matriz){
         for (j in 1..matriz){
             if (x1 == i && y1 == j){
                 print("@ ") // heroi

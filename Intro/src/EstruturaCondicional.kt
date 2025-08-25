@@ -1,5 +1,5 @@
 fun main() {
-    val idade = 20  // IF "ternário"
+    var idade = 20  // IF "ternário"
     val status = if (idade >= 18) "Adulto" else "Menor"
     println(status)
 
@@ -30,7 +30,7 @@ fun main() {
     }
     println(tipo)
 //when com intervalos
-    val idade = 25
+    idade = 25
     when (idade) {
         in 0..12 -> println("Criança")
         in 13..17 -> println("Adolescente")
