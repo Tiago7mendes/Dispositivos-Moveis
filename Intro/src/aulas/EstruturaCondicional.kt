@@ -1,3 +1,5 @@
+package aulas
+
 fun main() {
     var idade = 20  // IF "ternário"
     val status = if (idade >= 18) "Adulto" else "Menor"

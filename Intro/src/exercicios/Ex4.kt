@@ -1,3 +1,5 @@
+package exercicios
+
 import kotlin.math.pow
 import kotlin.math.sqrt
 

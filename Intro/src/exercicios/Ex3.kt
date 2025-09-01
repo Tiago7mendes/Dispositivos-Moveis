@@ -1,3 +1,5 @@
+package exercicios
+
 fun main() {
     // Peça dois números e uma operação (+, -, *, /). Mostre o resultado da operação
     //escolhida. Se a operação for inválida, exiba uma mensagem de erro.

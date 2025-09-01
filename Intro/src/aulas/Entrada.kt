@@ -1,3 +1,5 @@
+package aulas
+
 fun main() {
     print("Digite seu nome: ")
     val nome = readLine() // retorna um objeto String? podendo retornar um null

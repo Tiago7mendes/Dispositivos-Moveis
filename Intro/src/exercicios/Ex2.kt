@@ -1,3 +1,5 @@
+package exercicios
+
 fun main() {
     // Escreva um programa que leia três números inteiros e indique qual o menor valor dentre
     //eles.

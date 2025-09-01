@@ -1,3 +1,5 @@
+package exercicios
+
 fun main() {
     // Peça ao usuário para digitar um número inteiro e informe se ele é par ou ímpar,
     //utilizando o if como expressão.

@@ -1,3 +1,5 @@
+package aulas
+
 import java.lang.Math.pow
 import kotlin.random.Random
 import kotlin.math.*

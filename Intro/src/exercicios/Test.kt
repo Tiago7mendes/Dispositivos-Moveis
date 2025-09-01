@@ -1,3 +1,5 @@
+package exercicios
+
 fun main(){
 // em Kotlin tudo é objeto
 
