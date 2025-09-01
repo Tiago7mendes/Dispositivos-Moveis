@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82656e81-11dd-45f1-b171-751bec24a267" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bibliotecas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aulas/Bibliotecas.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entrada.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aulas/Entrada.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EstruturaCondicional.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aulas/EstruturaCondicional.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/Ex1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/Ex2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/Ex3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/Ex4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aulas/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3261a7DGtlQhTkVsAy6aaPSjKJH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,6 +33,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Kotlin.CalculadoraMediaKt.executor": "Run",
+    "Kotlin.ColecoesKt.executor": "Run",
     "Kotlin.FuncoesKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
