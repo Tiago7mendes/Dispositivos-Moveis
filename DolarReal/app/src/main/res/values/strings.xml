@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Perfil</string>
+    <string name="nome_padrao">Client name</string>
+    <string name="email_padrao">email@client.com</string>
+    <string name="hint_nome">Type your name</string>
+    <string name="hint_email">Type your email address</string>
+    <string name="alterar">Change</string>
+    <string name="daynight">Day / Night</string>
+    <string name="idioma">English</string>
+</resources>

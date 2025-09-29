@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/background">
+<LinearLayout
+    android:id="@+id/cardCliente"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:padding="16dp"
+    android:orientation="horizontal">
+    
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@mipmap/ic_launcher_round">
+    
+    </ImageView>
+    
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_weight="2"
+    android:orientation="vertical">
+    
+<TextView
+    android:id="@+id/tvNome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/nome_padrao"
+    android:textColor="?attr/colorOnPrimary"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+    
+<TextView
+    android:id="@+id/tvEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/email_padrao"
+    android:textColor="?attr/colorOnPrimary"
+    android:textSize="16sp" />
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    
+<EditText
+    android:id="@+id/etNome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:textColorHint="?attr/colorPrimary"
+    android:hint="@string/hint_nome" />
+<EditText
+    android:id="@+id/etEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:textColorHint="?attr/colorPrimary"
+    android:hint="@string/hint_email" />
+    
+<Button
+    android:id="@+id/btnAlterar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:backgroundTint="?attr/colorSecondary"
+    android:textColor="?attr/colorOnSecondary"
+    android:text="@string/alterar" />
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    
+<Button
+    android:id="@+id/btnDayNight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:backgroundTint="?attr/colorSecondary"
+    android:textColor="?attr/colorOnSecondary"
+    android:text="@string/daynight" />
+    
+<Button
+    android:id="@+id/btnIdioma"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:backgroundTint="?attr/colorSecondary"
+    android:textColor="?attr/colorOnSecondary"
+    android:text="@string/idioma" />
+    </LinearLayout>
+    </LinearLayout>
