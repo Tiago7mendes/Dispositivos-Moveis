@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Logotipo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.30"
+        android:layout_height="0dp"
+        android:src="@drawable/logo_ifsp"
+        android:contentDescription="Logo IFSP"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Texto explicativo -->
+
+    <!-- Lista de cursos -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Clique no curso para saber informações:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listaNomes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:dividerHeight="8dp"
+        android:scrollbars="none" />
+
+    <!-- Texto descritivo -->
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:text="Curso superior em desenvolvimento de software com enfoque mais amplo em diversas plataformas (desktop, mobile, web...). Incluindo análise, projeto, testes e manutenção."
+        android:layout_marginTop="24dp"
+        android:textAlignment="center" />
+</LinearLayout>
