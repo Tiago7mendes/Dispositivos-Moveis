@@ -1,4 +1,4 @@
-package com.example.perfilapp
+package com.example.dolarreal
 
 import org.junit.Test
 

@@ -1,109 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRaiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="?attr/background">
-<LinearLayout
-    android:id="@+id/cardCliente"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="?attr/colorPrimary"
-    android:padding="16dp"
-    android:orientation="horizontal">
-    
-<ImageView
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:src="@mipmap/ic_launcher_round">
-    
-    </ImageView>
-    
-<LinearLayout
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
+    android:padding="24dp"
     android:gravity="center"
-    android:layout_weight="2"
-    android:orientation="vertical">
-    
-<TextView
-    android:id="@+id/tvNome"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/nome_padrao"
-    android:textColor="?attr/colorOnPrimary"
-    android:textSize="18sp"
-    android:textStyle="bold" />
-    
-<TextView
-    android:id="@+id/tvEmail"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/email_padrao"
-    android:textColor="?attr/colorOnPrimary"
-    android:textSize="16sp" />
+    android:background="?android:attr/windowBackground">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:text="@string/titulo"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/layoutBandeiras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:padding="50dp"
+        android:background="@drawable/borda">
+
+        <ImageView
+            android:id="@+id/ivBandeiraOrigem"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/bandeira_origem"
+            android:src="@drawable/bandeira_brasil"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnInverter"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:text="⇄"
+            android:textSize="20sp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary" />
+
+        <ImageView
+            android:id="@+id/ivBandeiraDestino"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/bandeira_destino"
+            android:src="@drawable/bandeira_eua"
+            android:layout_marginStart="16dp" />
     </LinearLayout>
-    
-    </LinearLayout>
-    
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:orientation="vertical">
-    
-<EditText
-    android:id="@+id/etNome"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:textColorHint="?attr/colorPrimary"
-    android:hint="@string/hint_nome" />
-<EditText
-    android:id="@+id/etEmail"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:textColorHint="?attr/colorPrimary"
-    android:hint="@string/hint_email" />
-    
-<Button
-    android:id="@+id/btnAlterar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_margin="10dp"
-    android:backgroundTint="?attr/colorSecondary"
-    android:textColor="?attr/colorOnSecondary"
-    android:text="@string/alterar" />
-    </LinearLayout>
-    
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center">
-    
-<Button
-    android:id="@+id/btnDayNight"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_margin="10dp"
-    android:backgroundTint="?attr/colorSecondary"
-    android:textColor="?attr/colorOnSecondary"
-    android:text="@string/daynight" />
-    
-<Button
-    android:id="@+id/btnIdioma"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_margin="10dp"
-    android:backgroundTint="?attr/colorSecondary"
-    android:textColor="?attr/colorOnSecondary"
-    android:text="@string/idioma" />
-    </LinearLayout>
-    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_valor"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_calcular"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado_padrao"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+</LinearLayout>
