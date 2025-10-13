@@ -5,27 +5,29 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
-import com.example.agenda.R
+import com.example.agenda.databinding.ItemContatoBinding
 import com.example.agenda.model.Contato
 
 class ContatoAdapter(
-    private val context: Context,
+    context: Context,
     private val lista: List<Contato>
 ) : ArrayAdapter<Contato>(context, 0, lista) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val itemView = convertView ?: LayoutInflater.from(context)
-            .inflate(R.layout.item_contato, parent, false)
+        val binding: ItemContatoBinding
+        val itemView: View
+        if (convertView == null) {
+            binding = ItemContatoBinding.inflate(LayoutInflater.from(context), parent, false)
+            itemView = binding.root
+            itemView.tag = binding
+        } else {
+            itemView = convertView
+            binding = itemView.tag as ItemContatoBinding
+        }
         val contato = lista[position]
-        val imgFoto = itemView.findViewById<ImageView>(R.id.imgFoto)
-        val tvNome = itemView.findViewById<TextView>(R.id.tvNome)
-        val tvTelefone = itemView.findViewById<TextView>(R.id.tvTelefone)
-        val tvEmail = itemView.findViewById<TextView>(R.id.tvEmail)
-        imgFoto.setImageResource(contato.foto)
-        tvNome.text = contato.nome
-        tvTelefone.text = contato.telefone
-        tvEmail.text = contato.email
+        binding.imgFoto.setImageResource(contato.foto)
+        binding.tvNome.text = contato.nome
+        binding.tvTelefone.text = contato.telefone
+        binding.tvEmail.text = contato.email
         return itemView
     }
 }
