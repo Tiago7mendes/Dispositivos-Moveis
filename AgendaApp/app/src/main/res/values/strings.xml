@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AgendaApp</string>
+    <string name="adicionar_contato">Adicionar Contato</string>
+    <string name="filtrar_por_nome">Filtrar por nome</string>
+</resources>
